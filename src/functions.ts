@@ -1,4 +1,4 @@
-import { toHaveAccessibleDescription } from "@testing-library/jest-dom/matchers";
+//import { toHaveAccessibleDescription } from "@testing-library/jest-dom/matchers";
 
 /**
  * Consumes a single temperature in Fahrenheit (a number) and converts to Celsius
@@ -44,11 +44,7 @@ export function shout(message: string): string {
  * mark. Do not use an `if` statement in solving this question.
  */
 export function isQuestion(message: string): boolean {
-    if (message[message.length - 1] === "?") {
-        return true;
-    } else {
-        return false;
-    }
+    return message[message.length - 1] === "?";
 }
 
 /**
